@@ -6,11 +6,11 @@ How Corvus went from a domain-specific prototype to a general-purpose thinking p
 
 ## Origin: A Personal Tool for Venture Planning
 
-Corvus started in January 2026 as a proof-of-concept for a specific problem: planning a new software venture. The original spec imagined a tool that could help a solo developer navigate the decision landscape of starting a company — LLC formation, app store submissions, compliance requirements.
+The original idea behind Corvus was a tool that could tell you what you didn't know yet — the steps and requirements you wouldn't discover until you were already in motion. For example, you might not know that creating an organization-based Android Play account requires a verified DUNS number until you're halfway through the process. The goal was to surface those unknown unknowns early, through iterative conversation.
 
-The first build was a Next.js app with two panes: a timeline canvas on the left, a chat sidebar on the right. The chat (Huginn) talked to Claude via the Anthropic API. The timeline visualized entries — obligations, options, decisions — as confidence-weighted bubbles on a vertical spine.
+To test this, the first build used a rules engine loaded with one narrow slice of domain knowledge: starting an LLC for software and mobile app development. The chat sidebar (Huginn) talked to Claude via the Anthropic API, and the timeline visualized entries — obligations, options, decisions — as confidence-weighted bubbles on a vertical spine.
 
-It worked, but it had a rules engine baked in. Curated rules for the "solo dev starting a venture" domain generated inferred entries from facts. The tool knew about LLCs, app stores, and compliance — and nothing else.
+The rules worked, but they weren't the point. They were a proof-of-concept scaffold — a way to validate whether iterative, structured conversation could surface what you don't know. The real question was whether the interaction model would generalize beyond the original domain.
 
 ## The Core Grammar: Fork, Path, Obligation
 
@@ -35,9 +35,9 @@ A key insight from the same session: decisions should be append-only. Like a fin
 
 Two early users tested Corvus outside the original domain:
 
-**ISO 45001 compliance planning** — A user at a steel services company had been discussing compliance planning with ChatGPT. The conversations had useful thinking in them, but no structure. She used Corvus for about an hour and produced a structured timeline of decisions and obligations that she manually turned into presentation slides.
+**ISO 45001 compliance planning** — A user at a steel services company had been discussing compliance planning with AI. The conversations had useful thinking in them, but no structure. She used Corvus for about an hour and produced a structured timeline of decisions and obligations that she manually turned into presentation slides.
 
-**Book writing** — A therapist planning a book had the same experience. Multiple ChatGPT conversations full of decisions about structure, audience, and content — but no way to extract or maintain that structure over time. Corvus immediately surfaced the value.
+**Nonfiction writing** — An author planning a book had the same experience. Multiple AI conversations full of decisions about structure, audience, and content — but no way to extract or maintain that structure over time. Corvus immediately surfaced the value.
 
 Neither user cared about LLCs or app stores. They cared about the interaction model: chat naturally, and your decisions crystallize into something durable and visible.
 
