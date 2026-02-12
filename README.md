@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/corvus-logo.png" alt="Corvus" width="120" />
+</p>
+
 # Corvus Ledger
 
 A thinking partner that makes the structure of your decisions visible.
